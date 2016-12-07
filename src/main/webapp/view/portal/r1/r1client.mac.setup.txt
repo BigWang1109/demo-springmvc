@@ -1,0 +1,72 @@
+
+r1单点登录改造
+一下两个文件覆盖到 fsopr1/portal/layout/standard
+jquery——1.1.3.min.js
+jsonFrame.jsp
+
+
+
+mac 系统下注册 jar 文件
+
+/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+ -Dfile=/java/resource/r1client4.1/robase.jar \
+ -DgroupId=com.icss.r1 \
+ -DartifactId=robase \
+ -Dversion=4.1.0 \
+ -Dpackaging=jar \
+ -DgeneratePom=true
+
+
+/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+ -Dfile=/java/resource/r1client4.1/rodc.jar \
+ -DgroupId=com.icss.r1 \
+ -DartifactId=rodc \
+ -Dversion=4.1.0 \
+ -Dpackaging=jar \
+ -DgeneratePom=true
+
+
+/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+ -Dfile=/java/resource/r1client4.1/rosdk.jar \
+ -DgroupId=com.icss.r1 \
+ -DartifactId=rosdk \
+ -Dversion=4.1.0 \
+ -Dpackaging=jar \
+ -DgeneratePom=true
+
+
+/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+ -Dfile=/java/resource/r1client4.1/rosysenv.jar \
+ -DgroupId=com.icss.r1 \
+ -DartifactId=rosysenv \
+ -Dversion=4.1.0 \
+ -Dpackaging=jar \
+ -DgeneratePom=true
+
+
+/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+ -Dfile=/java/resource/r1client4.1/R1ServiceFramework4.0-B20080822.jar \
+ -DgroupId=com.icss.r1 \
+ -DartifactId=roservice \
+ -Dversion=4.1.0 \
+ -Dpackaging=jar \
+ -DgeneratePom=true
+
+
+ /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+  -Dfile=/java/resource/r1client4.1/rocore.jar \
+  -DgroupId=com.icss.r1 \
+  -DartifactId=rocore \
+  -Dversion=4.1.0 \
+  -Dpackaging=jar \
+  -DgeneratePom=true
+
+
+ /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+  -Dfile=/java/resource/r1client4.1/verify.jar \
+  -DgroupId=org.bjca.seal -DartifactId=verify -Dversion=1.0.0 -Dpackaging=jar -DgeneratePom=true
+
+
+ /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java "-Dmaven.home=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 15.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA 15.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.4.jar:/Applications/IntelliJ IDEA 15.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+  -Dfile=/java/resource/r1client4.1/ojdbc6.jar \
+  -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4.0 -Dpackaging=jar -DgeneratePom=true

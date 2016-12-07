@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- mysql
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/openfree</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+
+        <!-- oracle -->
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521:orcl</property>
+        <property name="hibernate.connection.username">fhkg</property>
+        <property name="hibernate.connection.password">fhkg</property>
+        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <!-- clob -->
+        <!--<property name="hibernate.jdbc.use_streams_for_binary">true</property>-->
+        <!--<property name="hibernate.connection.SetBigStringTryClob">true</property>-->
+        <!--<property name="hibernate.jdbc.batch_size">0</property>-->
+    	<!--hibernate.current_session_context_class=thread-->
+        
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <!-- <property name="format_sql">true</property> -->
+
+        <!-- Drop and re-create the database schema on startup -->
+        <!--<property name="hbm2ddl.auto">validate</property>-->
+
+        <!-- Names the annotated entity class -->
+        <mapping class="com.icss.demo.model.UploadFile"/>
+        <mapping class="com.icss.demo.model.UserJSON"/>
+        <mapping class="com.icss.demo.model.OrgTree"/>
+        <mapping class="com.icss.demo.model.TClob"/>
+        <mapping class="com.icss.demo.model.messBoard.messBoard"/>
+        <mapping class="com.icss.demo.model.scheduleManage.Schedule"/>
+        <mapping class="com.icss.demo.model.common.fhkgUser"/>
+
+
+    </session-factory>
+</hibernate-configuration>
